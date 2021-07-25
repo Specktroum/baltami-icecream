@@ -41,7 +41,11 @@ body {
 	direction:rtl;
 }
 main header {
-	margin:40px 3%!important;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+	margin:40px 3%;
 	width:94%;
 	height:100vh;
 	background-color:#f35c6e;
@@ -54,7 +58,7 @@ main header nav {
 	display:flex;
 	justify-content:space-between;
 	align-items:center;
-	padding:15px;
+	padding:5px 15px 0 0;
 	color:#fff;
 }
 main header nav  ul {
@@ -537,7 +541,7 @@ main footer {
 	display:none!important;
 }
 header {
-	min-width:94%;
+     width: 100%;
 	height:70vh;
 	display:flex;
 	flex-direction:column;
@@ -560,11 +564,9 @@ main header nav ul {
 	height:100%;
 }
 main header nav ul li {
+     text-align: center;
      padding: 0;
      margin: 0;
-}
-main header nav ul li a.about-us{
-     font-size: smaller;
 }
 main header .banner {
 	width:100%;
@@ -601,13 +603,20 @@ main header .banner .right-part .component p {
 	width:100%;
 	margin-bottom:60px;
 }
+main .our-product .product-title{
+     width: 100%;
+     height: 5vh;
+}
 main .our-product section {
+     width: 100%;
+     height: 95vh;
 	display:flex;
 	flex-direction:column;
 	justify-content:center;
 	align-items:center;
 }
 main .our-product .content {
+     text-align: center;
 	align-self:center;
 }
 main .our-product section .blobs {
@@ -633,6 +642,7 @@ main .managment-and-team section.managment {
 main .managment-and-team .managment .left-part {
 	width:100%;
 	height:60%;
+     font-size: small;
 	display:flex;
 	flex-direction:column;
 	justify-content:center;
@@ -656,7 +666,8 @@ main .managment-and-team .team {
 	justify-content:center;
 	align-items:center;
 	width:100%;
-	height:65%}
+	height:65%
+}
 .bolb {
 	position:absolute;
 	top:2100px;
@@ -678,12 +689,13 @@ main .hours-of-work p {
 	text-align:center;
 }
 main .hours-of-work section {
-	margin-top:10px;
+	margin-top:1vh;
 	width:100%;
-	height:105vh;
+	height:104vh;
 }
 main .hours-of-work section .day {
-	font-size:smaller;
+     padding: 5px;
+	font-size:x-small;
 	width:100px;
 	height:150px;
 	margin:3px 10px;
@@ -693,20 +705,21 @@ main .location {
 	display:flex;
 	justify-content:space-between;
 	align-items:center;
+     margin-bottom: 100px;
 	width:100%;
 	height:70vh;
 }
 main .location section {
 	display:flex;
 	flex-direction:column-reverse;
-	justify-content:center;
+	justify-content:space-between;
 	align-items:center;
 	width:100%;
-	height:55vh;
+	height:65vh;
 }
 main .location section .left-part {
 	display:flex;
-	justify-content:stretch;
+	justify-content:center;
 	align-items:center;
 	width:100%;
 }
@@ -724,23 +737,24 @@ main footer {
 	justify-content:center;
 	align-items:center;
 	width:100%;
-	height:110vh;
+	height:120vh;
 }
 main footer .row1 {
 	flex-direction:column;
 	width:100%;
-	height:90%;
+	height:93%;
 }
 .col {
+     padding: 10px;
 	width:100%;
-	height:100%;
+	height:33%;
 }
 main footer .row2 {
 	display:flex;
 	justify-content:space-between;
 	align-items:center;
 	width:100%;
-	height:10%;
+	height:7%;
 }
 main footer .row2 .baltami {
 	display: none;
