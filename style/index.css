@@ -301,7 +301,6 @@ main .managment-and-team .team .manual-worker .discript small {
 	color:#ffa1ac;
 }
 main .hours-of-work {
-     background-color: #928e8e;
 	display:flex;
 	justify-content:center;
 	align-items:center;
@@ -379,7 +378,7 @@ main .hours-of-work section .day span {
 main .location {
 	display:flex;
 	flex-direction:column;
-	justify-content:center;
+	justify-content:space-evenly;
 	align-items:center;
 	margin-top:200px;
 	width:100%;
@@ -411,10 +410,11 @@ main .location .location-title .location-border2 {
 	border-radius:5px;
 }
 main .location section {
+     padding: 10px;
 	width:100%;
-	height:85vh;
+	height:95vh;
 	display:flex;
-	justify-content:center;
+	justify-content:center !important;
 	align-items:center;
 }
 main .location section .location-img {
@@ -441,7 +441,7 @@ main .location section .left-part p {
 	text-align:justify;
 }
 main footer {
-	padding:10px;
+	padding:15px;
 	display:flex;
 	flex-direction:column;
 	justify-content:center;
@@ -468,6 +468,9 @@ main footer {
 	width:23%;
 	margin:10px;
 	height:100%;
+}
+.col h3{
+     margin-bottom: 40px;
 }
 .col1 span {
 	font-size:x-large;
@@ -500,6 +503,7 @@ main footer {
 .row2 .baltami {
 	display:flex;
 	justify-content:center;
+     align-items: flex-end;
 	color:#ffffff8a;
 	font-family: "rubik";
 	font-size:50px;
@@ -524,25 +528,12 @@ main footer {
 	justify-content:center;
 	align-items:center;
 }
-.footer-image {
-	position:absolute;
-	top: 3630px;
-	left:-90px;
-	transform:scale(.5) rotate(10deg);
-}
-.footer-image2 {
-     width: 150px;
-	transform:rotate(-20deg);
-	position:absolute;
-	top:3820px;
-	left: 1070px;
-}
 
 @media screen and (max-width:501px) {
 	body, main {
 	overflow-x:hidden;
 }
-.header-icecream, .footer-image2, .footer-image, .worktime {
+.header-icecream, .worktime {
 	display:none!important;
 }
 header {
@@ -554,21 +545,26 @@ header {
 	align-items:center;
 }
 main header nav {
+     padding: 0;
 	width:100%;
-	height:15%;
+	height:10%;
 	display:flex;
 	justify-content:space-between;
 	align-items:center;
 }
-main header nav .logo {
-	width:15%;
-}
-main header nav .action ul {
+main header nav ul {
 	display:flex;
 	justify-content:space-between;
 	align-items:center;
 	width:100%;
 	height:100%;
+}
+main header nav ul li {
+     padding: 0;
+     margin: 0;
+}
+main header nav ul li a.about-us{
+     font-size: smaller;
 }
 main header .banner {
 	width:100%;
@@ -747,16 +743,17 @@ main footer .row2 {
 	height:10%;
 }
 main footer .row2 .baltami {
-	font-size:40px;
-	padding-left:10px;
+	display: none;
 }
 main footer .row2 .reserved {
+     width: 100%;
 	display:flex;
 	justify-content:end;
 	align-items:center;
 }
 main footer .row2 .reserved div {
 	text-align:center;
-	width:80%;
+     font-size: larger;
+	width:100%;
 }
 }
