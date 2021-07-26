@@ -488,6 +488,9 @@ main footer {
 	width:100%;
 	text-align:justify;
 }
+.col3 a{
+	color: #fff;
+}
 .col2, .col3, .col4 {
 	padding:10px;
 }
